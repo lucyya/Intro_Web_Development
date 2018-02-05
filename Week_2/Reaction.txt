@@ -1,0 +1,9 @@
+Source: Five Important Considerations for Wireframing (http://mediatemple.net/blog/tips/five-important-considerations-for-wireframing/?utm_source=weekly_newsletter&utm_medium=email&utm_campaign=aug17newsletter)
+
+React:
+* Overall, building wireframing is important for UX problems because important problems could be generated (and probably solved) during this process without too much cost and unnecessary distractions.
+* Find out the problem and the target users, and design the project accordingly.
+* Keep in mind the problem and target users throughout the process!
+* Thinking about the workflow while sketching might generate critical issues never thought about. 
+* Better show the workflow, but how detail it is depends on the audience.
+* Don't spend too much unnecessary time on using tools!!!
