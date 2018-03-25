@@ -25,8 +25,8 @@ html, body {
     position: relative;
 }
 
-html {
-    background: url("../img/index-landing.jpg") no-repeat top center;
+body {
+    background: url("../img/map.jpg") no-repeat top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -40,27 +40,31 @@ div {
 header {
     width: 100%;
     z-index: 5;
+    height: 80px;
+    background-color: white;
+}
+
+header img {
     height: 70px;
-    background-color: rgba(255, 255, 255);
+    margin-top: -20px;
+    margin-left: 50px;
 }
 
 header h1 {
     display: inline-block;
     color: plum;
-    font-family: 'Kaushan Script', cursive;
-    margin: 0 5%;
+    margin: 0 10px;
     font-size: 50px;
+    font-weight: bold;
 }
 
 header nav {
     float: right;
     width: 40%;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 header li {
-    /* // TODO: change the font family */
-    font-family: 'Kaushan Script', cursive;
     display: inline-block;
     line-height: 50px;
     width: 30%;
@@ -68,8 +72,7 @@ header li {
 }
 
 header li:hover {
-    /* border-bottom: 3px solid orchid; */
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 header a {
@@ -88,9 +91,9 @@ header ul.attractions {
     display: none;
     position: absolute;
     width: 12%;
-    z-index: 10;
+    z-index: 1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 header ul.attractions li {
@@ -102,21 +105,6 @@ header ul.attractions li {
     border-bottom: 3px solid orchid;
 }
 
-figcaption {
-    position: relative;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
-figcaption:after {
-    z-index: -1;
-    background-color: white;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-}
-
 .icon { 
 	position: absolute;
 	width: 30px;
@@ -124,17 +112,31 @@ figcaption:after {
     z-index: 10;
 }
 
+figcaption {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
 footer {
-    background: lavender;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
     height: 80px;
-    padding: 15px;
-    position: absolute;
-    width: 100%;
+    padding: 15px 5%;
 }
 
 footer p {
-    text-align: center;
-    width: 100%;
+    display: inline-block;
+    color: whitesmoke;
+    font-weight: lighter;
+}
+
+footer a {
+    float: right;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: lighter;
+    line-height: 50px;
 }
 
 /* =============================================================================
@@ -258,7 +260,7 @@ footer p {
 }
 
 .sites {
-    background: url("../img/index-bottom.jpg") no-repeat center center fixed;
+    background: url("../img/map.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 200vh;
 }

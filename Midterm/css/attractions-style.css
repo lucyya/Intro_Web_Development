@@ -25,7 +25,7 @@ html, body {
     position: relative;
 }
 
-html {
+body {
     background: url("../img/attractions.jpg") no-repeat top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -40,27 +40,31 @@ div {
 header {
     width: 100%;
     z-index: 5;
+    height: 80px;
+    background-color: white;
+}
+
+header img {
     height: 70px;
-    background-color: rgba(255, 255, 255);
+    margin-top: -20px;
+    margin-left: 50px;
 }
 
 header h1 {
     display: inline-block;
     color: plum;
-    font-family: 'Kaushan Script', cursive;
-    margin: 0 5%;
+    margin: 0 10px;
     font-size: 50px;
+    font-weight: bold;
 }
 
 header nav {
     float: right;
     width: 40%;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 header li {
-    /* // TODO: change the font family */
-    font-family: 'Kaushan Script', cursive;
     display: inline-block;
     line-height: 50px;
     width: 30%;
@@ -68,8 +72,7 @@ header li {
 }
 
 header li:hover {
-    /* border-bottom: 3px solid orchid; */
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 header a {
@@ -90,7 +93,7 @@ header ul.attractions {
     width: 12%;
     z-index: 10;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 header ul.attractions li {
@@ -125,14 +128,23 @@ figcaption {
 }
 
 footer {
-    background: lavender;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
     height: 80px;
-    padding: 15px;
+    padding: 15px 5%;
 }
 
 footer p {
-    text-align: center;
-    width: 100%;
+    display: inline-block;
+    color: whitesmoke;
+    font-weight: lighter;
+}
+
+footer a {
+    float: right;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: lighter;
+    line-height: 50px;
 }
 
 /* =============================================================================
@@ -140,13 +152,12 @@ footer p {
    ========================================================================== */
 
 .landing {
-    height: 95vh;
+    height: 100vh;
     padding: 50px;
-    border-top: 10px solid white;
 }
 
 .landing figcaption {
-    background-image: url("../img/index-bottom.jpg");
+    background-image: url("../img/map.jpg");
     padding-top: 380px;
     text-align: center;
 }
@@ -235,7 +246,7 @@ footer p {
 }
 
 .sites {
-    background: url("../img/index-bottom.jpg") no-repeat bottom center;
+    background: url("../img/map.jpg") no-repeat bottom center;
     background-size: cover;
     height: 100vh;
 }
