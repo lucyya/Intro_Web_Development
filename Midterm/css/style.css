@@ -162,7 +162,7 @@ footer a {
 
 .map {
     padding: 1%;
-    background: radial-gradient( rgba(255, 255, 255, 0.3), transparent);
+    background: radial-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8));
     height: 100vh;
 }
 
@@ -232,16 +232,15 @@ footer a {
 
 #map {
     position: absolute;
-    right: 0;
-    z-index: -1;
-    margin-top: -118vh;
+    right: -14vh;
+    margin-top: -131vh;
     mask-image: url("../img/japan-map.svg");
     mask-repeat: no-repeat;
-    mask-position: 100% 30%;
+    mask-position: 40% 50%;
     mask-size: 75%;
     -webkit-mask-image: url("../img/japan-map.svg");
     -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: 100% 30%;
+    -webkit-mask-position: 40% 52%;
     -webkit-mask-size: 75%;
 }
 
