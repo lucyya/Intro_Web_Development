@@ -31,7 +31,7 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: 100%;
+    height: 100vh;
 }
 
 div {
@@ -40,33 +40,34 @@ div {
 
 header {
     width: 100%;
-    height: 80px;
+    height: 10vh;
     background-color: white;
 }
 
 header img {
-    height: 70px;
-    margin-top: -20px;
+    height: 9vh;
+    margin-top: -3vh;
     margin-left: 50px;
 }
 
 header h1 {
     display: inline-block;
     color: plum;
-    margin: 0 10px;
+    margin: 0 1vw;
     font-size: 50px;
     font-weight: bold;
+    line-height: 10vh;
 }
 
 header nav {
     float: right;
-    width: 40%;
-    margin-top: 15px;
+    width: 40vw;
+    margin-top: 1.5vh;
 }
 
 header li {
     display: inline-block;
-    line-height: 50px;
+    line-height: 7.5vh;
     width: 30%;
     transition: all 1s;
 }
@@ -114,8 +115,11 @@ figcaption {
 
 footer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
-    height: 80px;
-    padding: 15px 5%;
+    height: 10vh;
+    width: 100vw;
+    padding: 2vh 5%;
+    position: absolute;
+    top: 300vh;
 }
 
 footer p {
@@ -137,48 +141,57 @@ footer a {
    ========================================================================== */
 
 .landing {
+    height: 100vh;
+    position: relative;
+    top: -10vh;
+    z-index: -1;
+}
+
+.landing div {
     border: 40px solid white;
+    height: 100%;
+    border-top: 10vh solid white;
     padding: 2%;
-    border-top: 0px;
 }
 
 .landing svg {
     width: 100%;
+    height: 100%;
 }
 
 .landing #h2 {
-    font-size: 5px;
-    font-weight: bold;
+    font-size: 4.5px;
+    font-weight: 500;
 }
 
 .landing #h1 {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .landing #h3 {
     font-size: 3.5px;
+    font-weight: 300;
 }
 
 .map {
-    padding: 1%;
     background: radial-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8));
     height: 100vh;
+    position: relative;
+    top: -10vh;
 }
 
 .map figcaption {
     position: relative;
-    z-index: 1;
-    height: 500px;
+    z-index: 5;
+    height: 100%;
     width: 100%;
-    background-image: linear-gradient(to right, rebeccapurple, violet);
-    text-align: right;
-    margin-top: -3%;
+    background-image: linear-gradient(to right, purple, hotpink);
 }
 
 .map h2 {
-    margin-top: 15%;
-    font-size: 35px;
+    margin-top: 30vh;
+    font-size: 30px;
     text-align: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -196,6 +209,7 @@ footer a {
     color: transparent;
     background-clip: text;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    margin-top: -1%;
 }
 
 .map div {
@@ -206,7 +220,7 @@ footer a {
     box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.2);
     display: block;
     margin: 0 auto;
-    margin-top: 3%;
+    margin-top: 3vh;
     padding: 7px;
     transition: all 1s;
 }
@@ -232,22 +246,23 @@ footer a {
 
 #map {
     position: absolute;
-    right: -14vh;
-    margin-top: -131vh;
+    right: -22vw;
+    top: 100vh;
+    height: 100vh;
     mask-image: url("../img/japan-map.svg");
     mask-repeat: no-repeat;
-    mask-position: 40% 50%;
-    mask-size: 75%;
+    mask-position: 53%;
     -webkit-mask-image: url("../img/japan-map.svg");
     -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: 40% 52%;
-    -webkit-mask-size: 75%;
+    -webkit-mask-position: 53%;
 }
 
 .sites {
     background: url("../img/attractions.jpg") no-repeat bottom center;
     background-size: cover;
     height: 100vh;
+    position: relative;
+    top: -10vh;
 }
 
 .sites .wrapper {
@@ -259,23 +274,29 @@ footer a {
 .sites h2 {
     color: rgba(255, 240, 245, 0.9);
     font-size: 30px;
+    font-weight: 500;
 }
 
 .sites h1 {
     color: lavenderblush;
     font-size: 85px;
+    margin-bottom: 3vh;
+    margin-top: -2vh;
 }
 
 .sites .major h2,
 .sites .others h2 {
     color: lavenderblush;
-    text-align: left;
-    margin-top: 50px;
+    margin-top: 1vh;
+}
+
+.sites ul {
+    display: block;
 }
 
 .sites li {
     display: inline-block;
-    line-height: 40px;
+    line-height: 6vh;
     width: 100%;
     color: white;
     font-size: 20px;
@@ -284,15 +305,17 @@ footer a {
 
 .sites .major li {
     width: 33%;
+    float: left;
     text-align: center;
     font-size: 22px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 1vh;
 }
 
 .sites a {
     text-decoration: none;
     color: white;
+    font-weight: lighter;
 }
 
 .sites li:hover {
@@ -307,17 +330,19 @@ footer a {
 .sites .others div {
     float: left;
     width: 25%;
-    margin-top: 20px;
+    margin-top: 1vh;
 }
 
 .sites .others li {
     display: block;
+    font-weight: lighter;
 }
 
 .sites h3 {
     color: lavender;
     font-size: 25px;
-    height: 80px;
+    min-height: 10vh;
+    font-weight: normal;
 }
 
 /* =============================================================================
