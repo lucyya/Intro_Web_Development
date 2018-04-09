@@ -41,7 +41,7 @@
             <li><a href="attractions.html#tokyo">Tokyo</a></li>
             <li><a href="attractions.html#kyoto">Kyoto</a></li>
             <li><a href="attractions.html#osaka">Osaka</a></li>
-            <li><a href="attractions.html#lake">Other</a></li>
+            <li><a href="attractions.html">Other</a></li>
           </ul>          
         </li>
       </ul>
@@ -51,7 +51,7 @@
   <div class="landing clearfix">
     <figcaption>
       <h2>CHASE THE CHERRY</h2>
-      <h1>Top 10 Spots</h1>
+      <h1 id="title">Top 10 Spots</h1>
     </figcaption>
   </div>
 
@@ -65,7 +65,7 @@
             <a href="#tokyo">TOKYO</a>
           </li>
           <li>
-            <a href="#lake">FIVE FUJI LAKES</a>
+            <a href="#five">FIVE FUJI LAKES</a>
           </li>
           <li>
             <a href="#kyoto">KYOTO</a>
@@ -309,6 +309,7 @@
         </tbody>
       </table>
     </div>
+
     <div class="site lake even clearfix" id="lake">
       <h2>Lake Kawaguchiko</h2>
       <p>
@@ -414,6 +415,26 @@
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var link = window.location.href;
+      var index = link.indexOf("#");
+      if (index != -1) {
+        var att = link.slice(index + 1, );
+        if (document.getElementsByClassName(att)[0]) {
+          document.getElementById("title").textContent = att.charAt(0).toUpperCase() + att.slice(1);
+          document.getElementsByClassName("sites")[0].style.display = "none";
+          var site = document.getElementsByClassName("site");
+          for (var i = 0; i < site.length; i++) {
+            console.log(site[i].classList.contains(att));
+            if (!site[i].classList.contains(att)) {
+              site[i].style.display = "none";
+            }
+          }
+        }
+      }      
+    })
+  </script>
 </body>
 
 </html>
