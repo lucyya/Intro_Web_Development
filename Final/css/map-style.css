@@ -1,0 +1,328 @@
+/*
+Responsive 996px grid system ~ Style CSS.
+Copyright 2013, Josh Cope
+*/
+
+/* =============================================================================
+   Site Styles
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Fredericka+the+Great|IBM+Plex+Serif:400,500,600,700i');
+
+html, body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body {
+    background: url("../img/map.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 100vh;
+}
+
+nav {
+    height: 10vh;
+    font-size: 1vmax;
+}
+
+nav img {
+    height: 9vmin;
+    margin-left: 3vw;
+}
+
+nav h3 {
+    display: inline-block;
+    color: plum;
+    margin-left: 2vw;
+    font-size: 7vmin;
+} 
+
+.navbar-light .navbar-nav .nav-link {
+    color: orchid;
+    line-height: 3vh;
+}
+
+.navbar-light .navbar-nav .active .nav-link{
+    color: orchid;
+    line-height: 3vh;
+}
+
+.active {
+    border-bottom: 3px solid orchid;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: orchid;
+    line-height: 3vh;
+}
+
+.navbar-light .navbar-nav .show>.nav-link {
+    color: orchid;
+    line-height: 3vh;
+}
+
+.dropdown-menu {
+    min-width: 10rem;
+}
+
+.dropdown-item {
+    color: orchid;
+    transition: all 1s;
+    line-height: 3vh;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+figcaption {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
+footer {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 50vh;
+    color: whitesmoke;
+}
+
+footer h1 {
+    font-size: 8vmin;
+    margin-top: 5vh;
+    color: lavenderblush;
+}
+
+footer p {
+    font-size: 1.5vmin;
+    color: lavenderblush;
+}
+
+input[type="text"], input[type="email"] {
+    height: 2.5vmax;
+    width: 20vmax;
+    background-color: transparent;
+    font-size: 2vmin;
+    color: lavenderblush;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    background-color: transparent;
+    font-size: 2.5vmin;
+    color: lavenderblush;
+}
+
+footer button {
+    height: 4vmax;
+    width: 12vmax;
+}
+
+.btn {
+    border-radius: 50px;
+    font-size: 2vmin;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: lavenderblush;
+}
+
+input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: lavenderblush;
+}
+
+input[type="text"]::-moz-placeholder, input[type="email"]::-moz-placeholder { /* Firefox 19+ */
+    color: lavenderblush;
+}
+
+input[type="text"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder { /* IE 10+ */
+    color: lavenderblush;
+}
+
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* =============================================================================
+   Page Styles
+   ========================================================================== */
+
+.map {
+    height: 90vh;
+    background:  linear-gradient(to right, rgba(255,255,255,0.2), transparent, rgba(0,0,0,0.2)) top center,url("../img/japan-map.svg") bottom right 0.5vw no-repeat;
+}
+
+.map figcaption {
+    padding: 10vh 11vw;
+    background-image: linear-gradient(to right, darkviolet, hotpink);
+}
+
+.map h2 {
+    font-size: 3.5vmin;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.map h1 {
+    font-size: 8vmax;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    margin-top: -1vh;
+}
+
+.map .icon {
+    position: absolute;
+    min-width: 320px;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+}
+
+.map div img {
+    position: relative;
+    height: 5vmin;
+}
+
+/* #name {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+}
+
+#name p {
+    position: relative;
+    color: lavender;
+    background-color: rgba(0, 0, 0, 0.4);
+    line-height: 4vh;
+    width: 5vw;
+    font-size: 2vmin;
+} */
+
+#sapporo {
+    bottom: 70vmin;
+    right: 17vmin;
+}
+
+#sendai {
+    bottom: 43vmin;
+    right: 11vmin;
+}
+
+#kanazawa {
+    bottom: 31vmin;
+    right: 23vmin;
+}
+
+#tokyo {
+    bottom: 29vmin;
+    right: 3vmin;
+}
+
+#nagoya {
+    bottom: 25vmin;
+    right: 10vmin;
+}
+
+#kyoto {
+    bottom: 23vmin;
+    right: 9vmin;
+}
+
+#osaka {
+    bottom: 20vmin;
+    right: 8vmin;
+}
+
+#matsuyama {
+    bottom: 13vmin;
+    right: 15vmin;
+}
+
+#hiroshima {
+    bottom: 19vmin;
+    right: 11vmin;
+}
+
+#fukuoka {
+    bottom: 12vmin;
+    right: 15vmin;
+}
+
+#naha {
+    left: 50vmin;
+}
+
+.sites {
+    background-color: whitesmoke;
+}
+
+.sites h1 {
+    color: black;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 6vmin;
+}
+
+.sites h3 {
+    color: plum;
+    font-size: 30px;
+}
+
+.sites a {
+    text-decoration: none;
+    color: black;
+    padding: 1vh 1vw;
+    font-size: 22px;
+    transition: all 1s;
+}
+
+.sites a:hover {
+    background-color: rgba(255, 240, 245, 0.8);
+}
+
+.sites p {
+    font-size: 16px;
+}
+
+/* 
+.sites .left,
+.sites .right {
+    float: left;
+    width: 50%;
+}
+
+
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Tablet Portrait size to Base 996px */
+@media only screen and (min-width: 768px) and (max-width: 995px) {}
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size */
+@media only screen and (max-width: 479px) {}
+
+
+/* =============================================================================
+   Font-Face
+   ========================================================================== */
+/* This is the proper syntax for an @font-face file
+
+/* @font-face {
+font-family: 'FontName';
+src: url('../fonts/FontName.eot');
+src: url('../fonts/FontName.eot?iefix') format('embedded-opentype'),
+url('../fonts/FontName.woff') format('woff'),
+url('../fonts/FontName.ttf') format('truetype'),
+url('../fonts/FontName.svg#FontName') format('svg');
+font-weight: normal;
+font-style: normal; }
+*/
